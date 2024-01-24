@@ -12,7 +12,7 @@ public class MenuTest {
 
         Menu menu = new Menu();
 
-        menu.add(new Pizza("Marinara", 9.9f));
+        menu.add(new Pizza("Marinara", 9.9f, false));
 
         assertThat(menu.getPizzas().size()).isEqualTo(1);
 
@@ -23,7 +23,7 @@ public class MenuTest {
 
         Menu menu = new Menu();
 
-        menu.add(new Pizza("Marinara", 9.9f));
+        menu.add(new Pizza("Marinara", 9.9f, false));
 
         assertThat(menu.chargerContenu().size()).isEqualTo(5);
 
